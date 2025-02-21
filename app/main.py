@@ -1,7 +1,7 @@
 import uvicorn
 import sys
-from agent.agent import call_llm, ExplanationModel
-from agent.prompt import GREEK_AGENT_PROMPT
+from .agent.agent import call_llm, ExplanationModel
+from .agent.prompt import GREEK_AGENT_PROMPT
 from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException, Security
 from fastapi.security import APIKeyHeader
